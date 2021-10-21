@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryanair - Contacto</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="contenedor">
+        <header>
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="Logo de la compañia Ryanair"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <ul>
+                    <li>Acceso/Registro</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="preguntasFrecuentes">
+            <h2 id="tituloPreguntasFrecuentes">Preguntas frecuentes</h2>
+            <!--Contenedor con las tres listas de preguntas frecuentes-->
+            <div class="contenedorPreguntas">
+                <ul class="listaTituloPreguntas">
+                    <li>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="">Eius corrupti cum nobis numquam?</a></li>
+                    <li><a href="">Omnis id qui obcaecati cumque!</a></li>
+                    <li><a href="">Tempore culpa soluta corporis mollitia!</a></li>
+                    <li><a href="">Veritatis cupiditate tempora obcaecati.</a></li>
+                </ul>
+            </div>
+            <div class="contenedorPreguntas">
+                <ul class="listaTituloPreguntas">
+                    <li>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="">Harum nobis et sed atque.</a></li>
+                    <li><a href="">Praesentium aspernatur minima veniam.</a></li>
+                    <li><a href="">Necessitatibus ut cupiditate repellendus quo.</a></li>
+                    <li><a href="">Esse impedit reprehenderit similique cum.</a></li>
+                </ul>
+            </div>
+            <div class="contenedorPreguntas">
+                <ul class="listaTituloPreguntas">
+                    <li>
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="">Lorem ipsum dolor sit amet.</a></li>
+                    <li><a href="">Iure quia iusto omnis nihil!</a></li>
+                    <li><a href="">Sint asperiores illum nulla dignissimos.</a></li>
+                    <li><a href="">Eius magni nam debitis neque.</a></li>
+                    <li><a href="">Deserunt quis veniam ipsa perspiciatis?</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contacto">
+            <!--action="formulario.php"-->
+            <form method="post">
+                <h2>Formulario de contacto</h2>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="">
+                <label for="motivo">Categoría</label>
+                <select name="motivo" id="">
+                    <option value="0"></option>
+                    <option value="1">Vuelo</option>
+                    <option value="2">Hotel</option>
+                    <option value="3">Coche de alquiler</option>
+                    <option value="4">Pago</option>
+                    <option value="5">Reservas</option>
+                    <option value="6">Otro</option>
+                </select>
+                <label for="asunto">Asunto</label>
+                <input type="text" name="asunto" id="">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="" cols="30" rows="10" maxlength="255"></textarea>
+                <button class="botones" type="submit" onclick="formulario()">Enviar</button>
+            </form>
+            <div id="contenedorOpcionesContacto">
+                <div class="OpcionesContacto">
+                    <img src="img/iconoTelefono.png" alt="">
+                    <h2>Teléfono</h2>
+                    <p>Si tu consulta es urgente, llamanos:</p>
+                    <p class="telefono">968 977 977</p>
+                </div>
+                <div class="OpcionesContacto">
+                    <img src="img/iconoWhatsapp.png" alt="">
+                    <h2>WhatsApp</h2>
+                    <p>Escribenos y recibe tu respuesta en el movil</p>
+                    <p class="telefono">609 727 551</p>
+                </div>
+                <div class="OpcionesContacto">
+                    <img src="img/iconoChat.png" alt="">
+                    <h2>Chat</h2>
+                    <p>Chatea con uno de nuestros agentes en tiempo real y resuelve tus dudas</p>
+                </div>
+                <div class="OpcionesContacto">
+                    <img src="img/iconoOficina.png" alt="">
+                    <h2>Oficinas</h2>
+                    <p>Calle Joselito Nº 9 planta 3</p>
+                    <p>L-V de 8:00-15:00</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="">Accesibilidad</a>
+            <a href="">Información legal</a>
+            <a href="">Politica de cookies</a>
+            <a href="">Protección de datos</a>
+        </footer>
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

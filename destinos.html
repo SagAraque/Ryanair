@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryanair - Destinos</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<!--Se llama a la funcion changeTimed() al cargar la pagina para iniciar el cambio de imagen
+    y textos de la galeria-->
+<body onload="changeTimed()">
+    <div id="contenedor">
+        <header>
+            <div id="logo"><a href="index.html"><img src="img/logo.png" alt="Logo de la compañia Ryanair"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="destinos.html">Destinos</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <ul>
+                    <li>Acceso/Registro</li>
+                </ul>
+            </nav>
+        </header>
+        <section id="galeria">
+            <img src="img/galeria1.jpg" alt="" id="imagenGaleria">
+            <!--Al hacer click sobre el div, se llama a la funcion izquierda()
+                para retroceder en la galeria-->
+            <div id="flechaIzquierda" onclick="izquierda()"><img src="img/flechaIzquierda.png" alt=""></div>
+            <div id="contenidoGaleria">
+                <div>
+                    <h2 id="tituloGaleria">Lorem ipsum dolor sit amet.</h2>
+                    <p id="textoGaleria">Sed eros lectus, gravida sit amet tincidunt vel.</p>
+                    <a href="" id="enlaceGaleria">Reservar ahora</a>
+                </div> 
+            </div>
+            <!--Al hacer click sobre el div, se llama a la funcion derecha()
+                para avanzar en la galeria-->
+            <div id="flechaDerecha" onclick="derecha()"><img src="img/flechaDerecha.png" alt=""></div>
+        </section>
+        <section id="infoViajes">
+            <div class="contenedorViaje contenedorViaje2x2 contenedorViajeIzquierda">
+                <div class="imgViaje"><img src="img/imagenDestinoPlaya.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Seychelles</h2>
+                    <p>26 oct 2021 - 31 0ct 2021</p>
+                    <p>520€</p>
+                </div>
+            </div>
+            <div class="contenedorViaje">
+                <div class="imgViaje"><img src="img/imagenDestinoBerlin.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Berlín</h2>
+                    <p>26 oct 2021 - 29 0ct 2021</p>
+                    <p>229€</p>
+                </div>
+            </div>
+            <div class="contenedorViaje">
+                <div class="imgViaje"><img src="img/imagenDestinoDubai.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Dubai</h2>
+                    <p>15 oct 2021 - 20 0ct 2021</p>
+                    <p>735€</p>
+                </div>
+            </div>
+            <div class="contenedorViaje">
+                <div class="imgViaje"><img src="img/imagenDestinoLondres.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Londres</h2>
+                    <p>26 oct 2021 - 28 0ct 2021</p>
+                    <p>190€</p>
+                </div>
+            </div>
+            <div class="contenedorViaje">
+                <div class="imgViaje"><img src="img/imagenDestinoJapon.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Japón</h2>
+                    <p>6 oct 2021 - 15 0ct 2021</p>
+                    <p>750€</p>
+                </div>
+            </div>
+            <div class="contenedorViaje contenedorViajeIzquierda">
+                <div class="imgViaje"><img src="img/imagenDestinoNuevaYork.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Nueva York</h2>
+                    <p>9 oct 2021 - 14 0ct 2021</p>
+                    <p>600€</p>
+                </div>
+            </div>
+            <div class="contenedorViaje contenedorViajeIzquierda">
+                <div class="imgViaje"><img src="img/imagenDestinoMoscu.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Moscú</h2>
+                    <p>17 oct 2021 - 25 0ct 2021</p>
+                    <p>320€</p>
+                </div>
+            </div>
+            <div class="contenedorViaje contenedorViaje2x1">
+                <div class="imgViaje"><img src="img/imagenDestinoMelbourne.jpg" alt=""></div>
+                <div class="textoInfoViaje">
+                    <h2>Melbourne</h2>
+                    <p>4 oct 2021 - 10 0ct 2021</p>
+                    <p>450€</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <a href="">Accesibilidad</a>
+            <a href="">Información legal</a>
+            <a href="">Politica de cookies</a>
+            <a href="">Protección de datos</a>
+        </footer>
+    </div>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>

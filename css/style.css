@@ -1,0 +1,596 @@
+/* Tipografia */
+p, h1, h2, h3, a, li, input, label, .botones{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    line-height: 1.5em;
+    text-decoration: none;
+}
+input, label{color: black;}
+a:hover{text-decoration: underline;}
+/*Botones*/
+.botones{
+    background-color: #22356b;
+    color: white;
+    padding: 3px 20px;
+    margin:5px 150px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.botones:hover{
+    background-color: #2e4891 ;
+    transform: scale(1.1);
+}
+.botones:hover a{text-decoration: none;}
+.contenedorBoton{
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+
+/**
+ * Estructura principal/Index 
+ */
+
+/* Margenes de cada seccion de la web */
+section{margin: 5px 0px;}
+/*contenedor de la web*/
+#contenedor{
+    height: auto;
+    width: 1200px;
+    position: relative;
+    margin:0 auto;
+}
+
+/**
+ *Cabecera 
+ */
+header{
+    height: 100px;
+    width: 1200px;
+    float:left;
+    background-color: #22356b;
+}
+#logo{
+    height: 100px;
+    width: 310px;
+    float: left;
+    background-color: #22356b;
+    overflow: hidden;
+}
+#logo img{
+    height: 60px;
+    width: 100%;
+}
+#logo a{
+    height: 100%;
+    width: 300px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/**
+ *Menu 
+ */
+nav{
+    height: 100px;
+    width: 890px;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    background-color: #22356b;
+}
+/*Lista principal del menu*/
+nav ul:first-of-type{
+    width: 500px;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*Acceso/Registro*/
+nav ul:first-of-type li{
+    list-style: none;
+    display: inline;
+}
+nav ul:last-of-type li{list-style-image: url(../img/usuario.png);}
+nav ul li{font-weight: 700;}
+
+/** 
+ *Seccion buscador de viajes 
+ */
+#buscadorViaje{
+    width: 1200px;
+    height: 500px;
+    float: left;
+    background-image: url(../img/playa.jpg);
+}
+/*Contenedor del buscador de viajes*/
+#contenedorBuscador{
+    width: 900px;
+    height: 200px;
+    position: relative;
+    margin: 20px auto;
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    border:3px solid #22356b;
+    box-sizing: content-box;
+    padding: 10px;
+}
+#contenedorBuscador h2{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+/*Contenedor con los inputs de fecha, destino y boton*/
+#contenido{
+    height: 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+/*Contenedores de origen/destino y fecha*/
+#destino, #fecha{
+    width: 340px;
+    height: 100px;
+    margin:0px 20px;
+}
+#destino div, #fecha div{
+    width: auto;
+    margin:0px 5px;
+    float: left;
+}
+#destino input{
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+#destino label, #fecha label{
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    display: block;
+}
+#fecha input{
+    display: block;
+    width: 150px;
+}
+
+/** 
+ *Seccion precios 
+ */
+#precios{
+    height: auto;
+    width: 1200px;
+    background-color: #f5f5f5;
+    float: left;
+}
+#contenedoresPrecios{
+    height: auto;
+    width: 1200px;
+    float:left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding:10px 0px;
+}
+/*Contenedor de cada viaje junto con sus textos e imagen*/
+.viaje{
+    height: 200px;
+    width: 360px;
+    padding: 0px 10px;
+    margin: 5px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    border:2px solid #f5f5f5 ;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+.viaje:hover{
+    border: 2px solid #dfdfdf;
+    transition: all 0.2s linear;
+    transform:scale(1.05);
+    cursor: pointer;
+}
+
+/*Imagenes de la seccion viajes*/
+.imgViajeIndex{
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+/*Nombre y precio de la seccion viajes*/
+.textoViajeIndex{
+    height: 200px;
+    width: 230px;
+    padding: 35px 10px;
+    box-sizing: border-box;
+}
+hr{background-color: black;}
+.textoViajeIndex p{
+    font-weight: 600;
+    color: black;
+    float: right;
+}
+.textoViajeIndex span{
+    font-size: 25px;
+    font-weight: 800;
+    color: #22356b;
+}
+.textoViajeIndex h3{
+    color: black;
+    font-weight: 400;
+}
+#botonPrecios{
+    height: 50px;
+    width: 1200px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** 
+ *Seccion informacion 
+ */
+#panelesInfo{
+    width: 1200px;
+    height: 500px;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+#panelesInfo article{
+    width: 380px;
+    height: 500px;
+}
+.imagenInfo{
+    width: 380px;
+    height: 300px;
+    float: left;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+.imagenInfo img{
+    width: 380px;
+    height: 300px;
+    transition: all 0.5s ease-out;
+}
+.textoInfo{
+    width: 380px;
+    height: 200px;
+    float: left;
+    background-color: #22356b;
+}
+.textoInfo p, .textoInfo h2{margin-left: 20px;}
+#panelesInfo article:hover img{
+    transition: all 0.5s ease-out;
+    transform: scale(1.1);
+}
+
+/** 
+ *Pie de pagina 
+ */
+footer{
+    width: 1200px;
+    height: 50px;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #22356b;
+}
+
+/**
+ *Estructura destinos
+ */
+
+ /* Galeria de imagenes */
+ #galeria{
+    width: 1200px;
+    height: 400px;
+    float: left;  
+    display: flex;
+    align-items: center;
+}
+#flechaIzquierda, #flechaDerecha{
+    height: 100px;
+    width: 100px;
+    float: left;
+    background-color: rgba(34, 54, 107, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#flechaIzquierda{border-radius: 0 100px 100px 0;}
+#flechaDerecha{border-radius: 100px 0px 0px 100px;}
+/*Contenedor con el texto de la galeria*/
+#contenidoGaleria{
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+#contenidoGaleria div{
+    background-color: rgba(34, 54, 107, 0.6);;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 15px;
+}
+#imagenGaleria{
+    width: 1200px;
+    height: 400px;
+    position: absolute;
+    z-index: -1;
+}
+
+#textoGaleria, #tituloGaleria, #enlaceGaleria{
+    width: 350px;
+    margin: 0px 30px 0px 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+#tituloGaleria{
+    width: auto;
+    font-size: 38px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+#enlaceGaleria{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+    text-decoration: none;
+}
+#enlaceGaleria:hover{text-decoration: underline;}
+
+/* Viajes de la pagina destinos */
+
+#infoViajes{
+    height: auto;
+    width: 1200px;
+    float: left;
+}
+.contenedorViaje{
+    height: 300px;
+    width: 290px;
+    margin:5px 0px 5px 5px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+}
+/*Margenes de los contenedores de la izquierda*/
+.contenedorViajeIzquierda{margin: 5px 10px 5px 0px;}
+.contenedorViajeIzquierda{width: 295px;}
+/*Contenedor de imagen y texto de viajes*/
+.contenedorViaje .imgViaje{
+    width: 100%;
+    height: 140px;
+    float: left;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedorViaje .textoInfoViaje{
+    width: 100%;
+    height: 160px;
+    float: left;
+}
+/* Contenedor de viaje 2x2*/
+.contenedorViaje2x2{
+    height: 610px;
+    width: 600px;
+}
+.contenedorViaje2x2 .imgViaje{height: 450px;}
+.contenedorViaje2x2 .textoInfoViaje{height: 160px;}
+/*Contenedor de viaje 2x1*/
+.contenedorViaje2x1{
+    height: 300px;
+    width: 580px;
+}
+/*Tipografia viajes*/
+.contenedorViaje h2, .contenedorViaje p{
+    color: black;
+    margin:0px 0px 30px 20px;
+}
+.contenedorViaje p:last-of-type{
+    font-size: 30px;
+    font-weight: 700;
+    color: #22356b;
+}
+.contenedorViaje h2{margin: 10px 0px 0px 20px;}
+.contenedorViaje img{transition: all 0.5s ease-out;}
+.contenedorViaje:hover img{
+    transition: all 0.5s ease-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/**
+ *Estructura de contacto
+ */
+
+ /*Esctructura seccion preguntas frecuentes*/
+#preguntasFrecuentes{
+    height: 300x;
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border:2px solid lightgray;
+    box-sizing: border-box;
+    float: left;
+}
+.contenedorPreguntas{
+    height: 300px;
+    width: 390px;
+}
+#tituloPreguntasFrecuentes{
+    width: 70%;
+    background-color: #22356b;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+/*Estilo de las listas de preguntas frecuentes */
+.contenedorPreguntas h2, .contenedorPreguntas a{color: black;}
+.contenedorPreguntas li{color:#22356b;}
+.contenedorPreguntas ul:last-of-type li{margin-bottom: 10px;}
+.contenedorPreguntas ul:last-of-type{margin-left: 20px;}
+/*Iconos de las listas que forman los titulos de preguntas frecuentes*/
+.contenedorPreguntas:nth-of-type(1) .listaTituloPreguntas li{list-style-image: url(../img/iconoAvionListaContacto.png);}
+.contenedorPreguntas:nth-of-type(2) .listaTituloPreguntas li{list-style-image: url(../img/iconoCamaContacto.png);}
+.contenedorPreguntas:nth-of-type(3) .listaTituloPreguntas li{list-style-image: url(../img/iconoCocheContacto.png);}
+
+/*Estructura seccion de contacto/formulario*/
+#contacto{
+    height: 620px;
+    width: 1200px;
+    float: left;
+}
+#contacto form{
+    height: 610px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid lightgray;
+    box-sizing: border-box;
+    float: left;
+}
+
+#contacto form label, #contacto form input, #contacto form textarea, #contacto form select{
+    display: block;
+    margin: 2px 50px;
+    color: black;
+    border:2px solid #22356b;
+    border-radius: 5px;
+}
+#contacto form textarea{resize: none;}
+#contacto form label{
+    font-size: 20px;
+    font-weight: 700;
+    border:none;
+}
+#contacto form h2{
+    background-color: #22356b;
+    color: white;
+    margin: 20px 50px 5px 50px;
+    padding:5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#contenedorOpcionesContacto{
+    height: 620px;
+    width: 780px;
+    float: right;
+    display: flex;
+    justify-content:space-between;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.OpcionesContacto{
+    height: 300px;
+    width: 380px;
+    border: 2px solid lightgray;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+.OpcionesContacto h2, .OpcionesContacto p{color: black;}
+.telefono{font-weight: 700;}
+
+/**
+ *Seccion sobre nosotros
+ */
+#cabeceraNosotros{
+    height: 300px;
+    width: 1200px;
+    float: left;
+    background: url(../img/imgNosotrosCabecera.jpg) no-repeat center;
+    overflow: hidden;
+}
+#cabeceraNosotros div{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(34, 54, 107, 0.425);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+}
+#cabeceraNosotros div h1, #cabeceraNosotros div h2{
+    font-size: 70px;
+    margin: 0;
+}
+#cabeceraNosotros div h2{font-size: 50px;}
+/*Seccion de caracteristicas*/
+#caracteristicasNosotros{
+    height: 700px;
+    width: 1200px;
+    padding: 30px 0px 0px 0px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    float: left;
+}
+.caracteristica{
+    height: 300px;
+    width: 350px;
+    text-align: center;
+}
+.caracteristica h2, .caracteristica p, #historiaNosotros p{color: black;}
+.caracteristica p, #historiaNosotros p{font-weight: 500;}
+.caracteristica img{
+    height: 118px;
+    width: 118px
+}
+#imgNosotros{
+    height: 400px;
+    width: 1200px;
+    float: left;
+    background:url(../img/avionRyanairNosotros.jpg) no-repeat center;
+}
+/*Seccion historia*/
+#historiaNosotros{
+    height: 700px;
+    width: 1200px;
+    float: left;
+}
+#historiaNosotros p{
+    font-size: 20px;
+    text-align: left;
+}
+#historiaNosotros div{
+    display: flex;
+    justify-content: center;
+}
+#historiaNosotros h2{
+    width: 70%;
+    font-size: 30px;
+    text-align: center;
+    background-color: #22356b;
+    border-radius: 10px;
+}
+#historiaNosotros iframe{
+    margin: 30px 0px 5px 10px;
+    float: right;
+}
+
+
