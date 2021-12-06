@@ -13,8 +13,8 @@
 <!--Se llama a la funcion changeTimed() al cargar la pagina para iniciar el cambio de imagen
     y textos de la galeria-->
 <body onload="changeTimed()">
-    <div id="contenedor">
-        <header>
+    <header>
+        <div id="headerContent">
             <div id="logo"><a href="index.html"><img src="img/logo.png" alt="Logo de la compañia Ryanair"></a></div>
             <nav>
                 <ul>
@@ -27,7 +27,9 @@
                     <li>Acceso/Registro</li>
                 </ul>
             </nav>
-        </header>
+        </div>
+    </header>
+    <div id="contenedor">
         <section id="galeria">
             <img src="img/galeria1.jpg" alt="" id="imagenGaleria">
             <!--Al hacer click sobre el div, se llama a la funcion izquierda()
@@ -85,7 +87,7 @@
                     <p>750€</p>
                 </div>
             </div>
-            <div class="contenedorViaje contenedorViajeIzquierda">
+            <div class="contenedorViaje">
                 <div class="imgViaje"><img src="img/imagenDestinoNuevaYork.jpg" alt=""></div>
                 <div class="textoInfoViaje">
                     <h2>Nueva York</h2>
@@ -93,7 +95,7 @@
                     <p>600€</p>
                 </div>
             </div>
-            <div class="contenedorViaje contenedorViajeIzquierda">
+            <div class="contenedorViaje">
                 <div class="imgViaje"><img src="img/imagenDestinoMoscu.jpg" alt=""></div>
                 <div class="textoInfoViaje">
                     <h2>Moscú</h2>
@@ -110,13 +112,15 @@
                 </div>
             </div>
         </section>
-        <footer>
+    </div>
+    <footer>
+        <div id="footerContent">
             <a href="">Accesibilidad</a>
             <a href="">Información legal</a>
             <a href="">Politica de cookies</a>
             <a href="">Protección de datos</a>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script src="js/javascript.js"></script>
 </body>
 
